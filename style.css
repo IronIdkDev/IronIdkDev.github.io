@@ -1,0 +1,79 @@
+body, button, input, select, textarea {
+  font-family: 'Helvetica Neue', sans-serif;
+}
+
+html, body {
+  height: 100%;
+}
+
+body {
+  background: linear-gradient(to bottom, #353535, #1d1d1d);
+  background-attachment: fixed;
+  background-size: cover;
+  color: #DCDDDE;
+  display: flex;
+  flex-direction: column;
+  animation: gradient 10s ease infinite;
+  height: 100%;
+  z-index: 1;
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 50% 75%;
+  }
+  100% {
+    background-position: 75% 100%;
+  }
+}
+
+main {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+main .buttons {
+  display: flex;
+  gap: 10px;
+}
+
+main h1 {
+  font-size: 60px;
+  margin-bottom: 10px;
+}
+
+main button {
+  background-color: #36393F;
+  color: #FFFFFF;
+  border: none;
+  border-radius: 3px;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+main button:hover {
+  background-color: #060f2b;
+}
+
+footer {
+  color: #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 50px;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+}
+
+footer p {
+  font-size: 14px;
+}

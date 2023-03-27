@@ -4,6 +4,8 @@ body, button, input, select, textarea {
   
   html, body {
     height: 100%;
+    margin: 0;
+    padding: 0;
     scroll-behavior: smooth;
   }
 
@@ -11,6 +13,10 @@ body, button, input, select, textarea {
     font-size: 2rem;
     font-weight: 700;
     margin-bottom: 1rem;
+    text-align: center;
+  }
+
+  h2{
     text-align: center;
   }
   
@@ -63,4 +69,20 @@ body, button, input, select, textarea {
     font-size: xx-large;
     margin-left: 3rem;
     margin-right: 3rem;
+  }
+
+  a{
+    text-decoration: none;
+    color: #f2f2f2;
+  }
+
+  .IntroSIS{
+    display: block;
+    width: 30rem;
+    margin: auto;
+  }
+
+  .IntroSIS .p{
+    margin-top: 1rem;
+    margin-bottom: 1rem;
   }

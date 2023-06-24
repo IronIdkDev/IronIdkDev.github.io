@@ -20,6 +20,25 @@ body {
   z-index: 1;
 }
 
+/* Custom Scrollbar */
+body::-webkit-scrollbar {
+  width: 12px;
+}
+
+body::-webkit-scrollbar-track {
+  background: rgba(0, 0, 0, 0.1);
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: #6e6e6e;
+  border-radius: 6px;
+  border: 3px solid rgba(0, 0, 0, 0);
+}
+
+body::-webkit-scrollbar-thumb:hover {
+  background-color: #a1a1a1;
+}
+
 @keyframes gradient {
   0% {
     background-position: 0% 50%;

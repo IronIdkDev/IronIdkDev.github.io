@@ -1,5 +1,6 @@
 {
-    "entry": {
+  "entry": [
+    {
       "url": "http://moeyaceder.pt/",
       "date": "2023/6/22",
       "type": "Phishing",
@@ -7,7 +8,34 @@
       "reportDate": "2023/6/22",
       "reportedBy": "João Ferro",
       "caughtBy": "João Ferro",
-      "comments": "Called me and pretendend to be from my bank. They asked me to go to a website and enter my credentials. I caught them and reported their website."
+      "comments": "Called me and pretended to be from my bank. They asked me to go to a website and enter my credentials. I caught them and reported their website."
+    },
+    {
+      "url": "https://oaxsjlevu-d175-api-v1.automodest.ru/",
+      "date": "2023/6/25",
+      "type": "Malware",
+      "status": "Monitoring",
+      "reportedBy": "João Ferro",
+      "caughtBy": "João Ferro",
+      "comments": ""
+    },
+    {
+      "url": "https://lukxyquvp-d175-api-v1.krdklimatik.ru/",
+      "date": "2023/6/25",
+      "type": "Malware",
+      "status": "Monitoring",
+      "reportedBy": "João Ferro",
+      "caughtBy": "João Ferro",
+      "comments": ""
+    },
+    {
+      "url": "https://banco-best.pt/abrir-conta-digital-no-banco-best/",
+      "date": "2023/6/25",
+      "type": "Phishing",
+      "status": "Monitoring",
+      "reportedBy": "",
+      "caughtBy": "",
+      "comments": ""
     }
-  }
-  
+  ]
+}

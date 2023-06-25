@@ -9,18 +9,6 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
   });
 });
 
-// Disable Part 1 button
-const btnP1 = document.getElementById('btn-p1');
-btnP1.addEventListener('click', () => {
-  alert('Part 1 is currently disabled');
-});
-
-// Redirect to Part 2
-const btnP2 = document.getElementById('btn-p2');
-btnP2.addEventListener('click', () => {
-  window.location.href = 'part2/part2.html';
-});
-
 function toggleMenu() {
   const hamburger = document.querySelector('.hamburger');
   const nav = document.querySelector('.nav');
@@ -29,8 +17,10 @@ function toggleMenu() {
   nav.classList.toggle('open');
 
   if (nav.classList.contains('open')) {
+    nav.style.opacity = '1';
     nav.style.transform = 'translateY(0)';
   } else {
+    nav.style.opacity = '0';
     nav.style.transform = 'translateY(-100%)';
   }
 }

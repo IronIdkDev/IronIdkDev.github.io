@@ -1,62 +1,69 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <title>João Ferro</title>
-    <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css?family=Merriweather:400,700" rel="stylesheet">
-  </head>
-  <body>
-    <header class="header">
-      <div class="hamburger" onclick="toggleMenu()">
-        <span></span>
-        <span></span>
-        <span></span>
-      </div>
-      <h1 class="title">João Ferro's Personal Projects</h1>
-      <nav class="nav">
-        <ul>
-          <li id="tab1" class="tab"><a href="#projects">Projects</a></li>
-          <ul class="sub-list">
-            <li><a href="#project1">Project 1</a></li>
-            <li><a href="#project2">Project 2</a></li>
-          </ul>
-          <li id="tab2" class="tab"><a href="#contact">Contact</a></li>
-        </ul>
-      </nav>
-    </header>
-    
-    <main>
-      <section id="intro">
-        <h1>Welcome to my Github Page</h1>
-        <p class="description">This is where I share my personal projects, ideas, thoughts, etc. This homepage showcases some updates, news and other relevant information. You can access the hamburguer menu to navigate through the website.</p>
-      </section>
-      <section id="projects">
-        <h2>Personal Projects</h2>
-        <div class="project-card">
-          <img src="project1-thumbnail.jpg" alt="Project 1">
-          <div class="project-info">
-            <h3>Better Internet</h3>
-            <p>A project aimed at improving internet speed and reliability.</p>
-            <a href="project1-details.html" class="btn">View Details</a>
-          </div>
-        </div>
-        
-        <div class="project-card">
-          <img src="project2-thumbnail.jpg" alt="Project 2">
-          <div class="project-info">
-            <h3>Valorant Plus</h3>
-            <p>An extension for the popular game Valorant, enhancing gameplay features.</p>
-            <a href="project2-details.html" class="btn">View Details</a>
-          </div>
-        </div>
-      </section>
-    </main>
-    
-    <footer id="contact">
-      <p>&copy; 2023 João Ferro | Email: joaomferro.profissional@gmail.com | Twitter: @ironidk | Github: /IronIdkDev</p>
-    </footer>
+<head>
+  <meta charset="utf-8">
+  <title>João Ferro</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css?family=Merriweather:400,700" rel="stylesheet">
+</head>
+<body>
+  <header class="header">
+    <div class="hamburger" onclick="toggleMenu()">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+    <h1 class="title">João Ferro's Personal Projects</h1>
+    <div class="theme-toggle">
+      <input type="checkbox" class="theme-toggle-checkbox" id="theme-toggle">
+      <label for="theme-toggle" class="theme-toggle-label"></label>
+      <span class="theme-toggle-moon">🌙</span>
+      <span class="theme-toggle-sun">☀️</span>
+    </div>    
+  </header>
+<nav class="nav">
+  <ul>
+    <li id="tab1" class="tab"><a href="#projects">Projects</a>
+      <ul class="sub-list">
+        <li><a href="#project1">Project 1</a></li>
+        <li><a href="#project2">Project 2</a></li>
+      </ul>
+    </li>
+    <li id="tab2" class="tab"><a href="#contact">Contact</a></li>
+  </ul>
+</nav>
 
-    <script src="app.js"></script>
-  </body>
+<main>
+  <section id="intro">
+    <h1>Welcome to my Github Page</h1>
+    <p class="description">This is where I share my personal projects, ideas, thoughts, etc. This homepage showcases some updates, news and other relevant information. You can access the hamburger menu to navigate through the website.</p>
+  </section>
+  <section id="projects">
+    <h2>Personal Projects</h2>
+    <div class="project-card">
+      <img src="project1-thumbnail.jpg" alt="Project 1">
+      <div class="project-info">
+        <h3>Better Internet</h3>
+        <p>A project aimed at improving internet speed and reliability.</p>
+        <a href="project1-details.html" class="btn">View Details</a>
+      </div>
+    </div>
+
+    <div class="project-card">
+      <img src="project2-thumbnail.jpg" alt="Project 2">
+      <div class="project-info">
+        <h3>Valorant Plus</h3>
+        <p>An extension for the popular game Valorant, enhancing gameplay features.</p>
+        <a href="project2-details.html" class="btn">View Details</a>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer id="contact">
+  <p>&copy; 2023 João Ferro | Email: joaomferro.profissional@gmail.com | Twitter: @ironidk | Github: /IronIdkDev</p>
+</footer>
+
+<script src="app.js"></script>
+</body>
 </html>

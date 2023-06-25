@@ -4,18 +4,54 @@
     <meta charset="utf-8">
     <title>João Ferro</title>
     <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Merriweather:400,700" rel="stylesheet">
   </head>
   <body>
-    <main>
-      <h1>Welcome to my website where I share my personal projects</h1>
-      <div class="buttons">
-        <button id="btn-p1">Better Internet</button>
-        <button id="btn-p2">Valorant Plus</button>
+    <header class="header">
+      <div class="hamburger" onclick="toggleMenu()">
+        <span></span>
+        <span></span>
+        <span></span>
       </div>
+      <nav class="nav">
+        <ul>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+    
+    <main>
+      <section id="intro">
+        <h1>João Ferro</h1>
+        <p>Software Developer</p>
+      </section>
+      <section id="projects">
+        <h2>Personal Projects</h2>
+        <div class="project-card">
+          <img src="project1-thumbnail.jpg" alt="Project 1">
+          <div class="project-info">
+            <h3>Better Internet</h3>
+            <p>A project aimed at improving internet speed and reliability.</p>
+            <a href="project1-details.html" class="btn">View Details</a>
+          </div>
+        </div>
+        
+        <div class="project-card">
+          <img src="project2-thumbnail.jpg" alt="Project 2">
+          <div class="project-info">
+            <h3>Valorant Plus</h3>
+            <p>An extension for the popular game Valorant, enhancing gameplay features.</p>
+            <a href="project2-details.html" class="btn">View Details</a>
+          </div>
+        </div>
+      </section>
     </main>
-    <footer>
-      <p>&copy; 2023 João Ferro</p>
+    
+    <footer id="contact">
+      <p>&copy; 2023 João Ferro | Email: joaomferro.profissional@gmail.com | Twitter: @ironidk | Github: /IronIdkDev</p>
     </footer>
+
     <script src="app.js"></script>
   </body>
 </html>

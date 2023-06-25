@@ -21,11 +21,16 @@ btnP2.addEventListener('click', () => {
   window.location.href = 'part2/part2.html';
 });
 
-// Toggle menu
 function toggleMenu() {
   const hamburger = document.querySelector('.hamburger');
   const nav = document.querySelector('.nav');
 
   hamburger.classList.toggle('open');
-  nav.style.display = nav.style.display === 'block' ? 'none' : 'block';
+  nav.classList.toggle('open');
+
+  if (nav.classList.contains('open')) {
+    nav.style.transform = 'translateY(0)';
+  } else {
+    nav.style.transform = 'translateY(-100%)';
+  }
 }
